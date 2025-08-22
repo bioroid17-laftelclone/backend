@@ -44,7 +44,6 @@ class Profile(CommonModel):
         max_length=15,
     )
     age_rating = models.PositiveSmallIntegerField(
-        max_length=3,
         choices=AgeRatingChoices.choices,
         default=AgeRatingChoices.ALL,
     )
